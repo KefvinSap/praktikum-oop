@@ -2,4 +2,6 @@
  
 require "User.php"; 
  
-$u = new User(); $u->name = "Rani"; echo $u->sayHello(); 
+$u = new User();
+$u->name = "Rani";
+echo $u->sayHello(); 
