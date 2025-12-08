@@ -18,8 +18,8 @@ class Account {
     } 
 } 
 
-$acc = new Account("Rani", 5000, "1234"); 
- 
-echo $acc->owner;      // boleh echo $acc->getBalance("1234");  // boleh 
- 
-echo $acc->balance;    // error echo $acc->pin;        // error 
+class PremiumAccount extends Account {
+    public function debugBalance() { 
+        return $this->balance; // boleh karena protected 
+    } 
+}  
