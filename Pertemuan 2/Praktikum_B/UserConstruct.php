@@ -1,8 +1,9 @@
 <?php 
  
 class UserConstruct {
-    public function __construct(         public string $name,
-    public int $age) {
+    public function __construct(
+        public string $name,
+        public int $age) {
 
     }
 } 
